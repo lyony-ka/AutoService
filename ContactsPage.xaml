@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:AutoService"
+             x:Class="AutoService.ContactsPage"
+             Title="Контакты"
+             BackgroundColor="#f4f4f0">
+
+    <Grid RowDefinitions="Auto, *, Auto" Padding="20">
+        <!-- Адрес -->
+        <!--<Frame Grid.Row="0"
+               CornerRadius="15"
+               BackgroundColor="#AAFFFFFF"
+               Padding="20"
+               Margin="0,20,0,0"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center">
+            <Label Text="Наш адрес: Перовская ул., 66, стр. 2, Москва"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   FontSize="Medium"
+                   TextColor="#555" />
+        </Frame>-->
+        
+        <!-- Телефон -->
+        <AbsoluteLayout>
+            <Button
+                     BackgroundColor="#fdfdfc"
+                     Opacity="0.4"
+                     HorizontalOptions="Center"
+                     WidthRequest="320"
+                     HeightRequest="100"
+                     Margin="0, 0, 0, 0"
+                     CornerRadius="10"
+                     BorderWidth="1"
+                     BorderColor="#7a876e"
+            />     
+            <Image Source="phone.png"
+                   Aspect="AspectFit"
+                   WidthRequest="100"
+                   Margin="-5 ,25, 0, 0"
+                   Opacity="0.9"/>
+            <Label Text="+7 (909)-313-45-87"
+                   FontFamily=""
+                   FontSize="20"
+                    TextColor="#5c5c5c"
+                    Opacity="1"
+                    Margin="80,15,0,0"
+                />
+            <Label Text="+7 (952)-487-13-45"
+                   FontFamily=""
+                   FontSize="20"
+                    TextColor="#5c5c5c"
+                    Opacity="1"
+                    Margin="80,50,0,0"
+    />
+        </AbsoluteLayout>
+
+        <!-- Мэйл -->
+        <AbsoluteLayout>
+            <Button BackgroundColor="#fdfdfc"
+                Opacity="0.4"
+                HorizontalOptions="Center"
+                WidthRequest="320"
+                HeightRequest="100"
+                Margin="0, 120, 0, 0"
+                CornerRadius="10"
+                BorderWidth="1"
+                BorderColor="#7a876e"
+            />
+            <Image Source="mail.png"
+                   Aspect="AspectFit"
+                   WidthRequest="70"
+                   Margin="10 ,135, 0, 0"
+                   Opacity="0.9"/>  
+            <Label Text="autoservice@gmail.com"
+                   FontFamily=""
+                   FontSize="20"
+                    TextColor="#5c5c5c"
+                    Opacity="1"
+                    Margin="80,155,0,0"
+            />
+        </AbsoluteLayout>
+
+        <!-- Местоположение -->
+        <AbsoluteLayout>
+            <Button BackgroundColor="#fdfdfc"
+            Opacity="0.4"
+            HorizontalOptions="Center"
+            WidthRequest="320"
+            HeightRequest="350"
+            Margin="0, 240, 0, 0"
+            CornerRadius="10"
+            BorderWidth="1"
+            BorderColor="#7a876e"
+/>
+            <Image Source="gps.png"
+                   Aspect="AspectFit"
+                   WidthRequest="60"
+                   Margin="15 ,250, 0, 0"
+                   Opacity="0.9"/>
+            <Label Text="Наш адрес: Перовская ул., 66,"
+                   FontFamily=""
+                   FontSize="18"
+                   TextColor="#5c5c5c"
+                   Opacity="1"
+                   Margin="80,265,0,0"
+                />
+            <Label Text=" стр. 2, Москва"
+                   FontFamily=""
+                   FontSize="18"
+                   TextColor="#5c5c5c"
+                   Opacity="1"
+                   Margin="75,290,0,0"
+                />
+            <Image Source="contact.png"
+                   Aspect="AspectFit"
+                    WidthRequest="300"
+                    Margin="10 ,350, 0, 0"
+                    Opacity="0.85"
+                   />
+            <Button Grid.Row="2"
+                    Text="Открыть на карте"
+                    FontSize="Medium"
+                    BackgroundColor="#7a876e"
+                    FontFamily=""
+                    TextColor="White"
+                    CornerRadius="50"
+                    Padding="10"
+                    Clicked="OnOpenMapClicked"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    Margin="90,530,0,0" />    
+        </AbsoluteLayout>
+
+        <!-- Кнопка -->
+        
+    </Grid>
+</ContentPage>
+

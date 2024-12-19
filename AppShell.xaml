@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:AutoService"
+       x:Class="AutoService.AppShell">
+
+    <TabBar>
+        <!-- Главная -->
+        <ShellContent Title="Главная" Icon="home1.png" ContentTemplate="{DataTemplate local:MainPage}" />
+
+        <!-- Гараж -->
+        <ShellContent Title="Гараж" Icon="garage.png" ContentTemplate="{DataTemplate local:GaragePage}" />
+
+        <!-- Контакты -->
+        <ShellContent Title="Контакты" Icon="contacts1.png" ContentTemplate="{DataTemplate local:ContactsPage}" />
+    </TabBar>
+
+</Shell>

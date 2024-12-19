@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AutoService.AddCarPage"
+             Title="Добавить автомобиль">
+
+    <StackLayout Padding="10">
+
+        <!-- Поля для ввода данных автомобиля -->
+        <Label Text="Марка" FontSize="Medium"/>
+        <Entry x:Name="MakeEntry" Placeholder="Введите марку автомобиля" />
+
+        <Label Text="Модель" FontSize="Medium"/>
+        <Entry x:Name="ModelEntry" Placeholder="Введите модель автомобиля" />
+
+        <Label Text="Год выпуска" FontSize="Medium"/>
+        <Entry x:Name="YearEntry" Placeholder="Введите год выпуска" Keyboard="Numeric" />
+
+        <Label Text="Цвет" FontSize="Medium"/>
+        <Entry x:Name="ColorEntry" Placeholder="Введите цвет автомобиля" />
+
+        <Label Text="Номер автомобиля" FontSize="Medium"/>
+        <Entry x:Name="LicensePlateEntry" Placeholder="Введите номер автомобиля" />
+
+        <!-- Кнопка для добавления автомобиля -->
+        <Button Text="Добавить автомобиль" Clicked="OnAddCarClicked" />
+
+    </StackLayout>
+
+</ContentPage>
